@@ -1,0 +1,62 @@
+# ---------- Secrets & environment ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+coverage.xml
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# ---------- Node / Frontend ----------
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+.pnpm-store/
+
+# ---------- Docker / data ----------
+docker-compose.override.yml
+.docker-data/
+postgres-data/
+redis-data/
+
+# ---------- Backups & dumps (never commit financial data) ----------
+*.dump
+*.sql.gz
+*.bak
+backups/
+
+# ---------- Voice uploads & models ----------
+uploads/
+*.webm
+*.wav
+models/
+
+# ---------- Logs ----------
+*.log
+logs/
+
+# ---------- IDE / OS ----------
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
